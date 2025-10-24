@@ -71,7 +71,7 @@ Con esta información, podemos finalizar el modelo relacional de nuestras tablas
 
 # SCRIPT COMPLETO
 
-Adjunto a este documento se encuentra el archivo en formato SQL llamado **pinacoteca.sql** con el código resultante. También podemos encontrar su contenido en el [repositorio de GitHub](https://github.com/anairinac/ucm-sql/ejemplo/blob/main/ejemplos/pinacoteca/pinacoteca.sql) correspondiente, así como en la siguiente sección:
+Adjunto a este documento se encuentra el archivo en formato SQL llamado **pinacoteca.sql** con el código resultante. También podemos encontrar su contenido en el [repositorio de GitHub](https://github.com/anairinac/ucm-sql/blob/main/ejemplos/pinacoteca/pinacoteca.sql) correspondiente, así como en la siguiente sección:
 
 ```sql
 /*--------------------------------------------------------------

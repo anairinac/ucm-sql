@@ -172,3 +172,6 @@ CREATE TABLE es_maestro (
     FOREIGN KEY (codigoMaestro) REFERENCES pintor(codigo) ON DELETE CASCADE,
     FOREIGN KEY (codigoDiscipulo) REFERENCES pintor(codigo) ON DELETE CASCADE ); 
 ```
+
+
+https://github.com/anairinac/ucm-sql/blob/3f4d72993e606a72530c769f35305e8cb4be6c14/ejemplos/pinacoteca/pinacoteca.sql#L1-L98

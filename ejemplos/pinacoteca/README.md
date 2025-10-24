@@ -3,6 +3,7 @@
 ## *Bases de Datos SQL*
 
 **Irina Calvo**
+
 Máster Big Data, Data Science, Inteligencia Artificial  
 Universidad Complutense \- NTIC
 
@@ -20,6 +21,7 @@ Los pintores pueden pertenecer o no a una escuela de la que se desea saber su no
 
 Los pintores pueden tener también uno o varios mecenas que les protegen (nombre, país, fecha de nacimiento y fecha de defunción si procede). A su vez un mismo mecenas puede serlo de varios pintores.
 
+
 # DISEÑO ENTIDAD-RELACIÓN
 
 En esta sección se desarrolla el modelo conceptual de la base de datos a trabajar, utilizando un diagrama Entidad-Relación, haciendo uso de la notación Chen para describir entidades, relaciones, atributos, cardinalidades e interdependencias.
@@ -27,15 +29,15 @@ En esta sección se desarrolla el modelo conceptual de la base de datos a trabaj
 El primer diagrama hace uso de la variante original numérica de Peter Chen, presentada por el mismo en su artículo "*The Entity–Relationship Model: Toward a Unified View of Data*" en 1976\.
 
 
-![][image2]
+![][Numerico.png]
 
 Este segundo diagrama hace uso de la variante simbólica de Chen:  
 
-![][image3]
+![][Simbolico.png]
 
 Este último diagrama utiliza la variante híbrida de Chen, la cual hemos completado además con los atributos de cada entidad.  
 
-![][image4]
+![][Completo.png]
 
 # MODELO RELACIONAL
 

@@ -65,7 +65,7 @@ escuela ( codigo, nombre, pais, fechaAparicion )
 
 Con esta información, podemos finalizar el modelo relacional de nuestras tablas:
 
-![](https://whimsical.com/ejemplo-pinacoteca-EkBc3gVjbFJh2f4aH1QiWH)
+![](Relacional.png)
 
 # SCRIPT COMPLETO
 

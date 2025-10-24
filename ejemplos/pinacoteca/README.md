@@ -29,15 +29,15 @@ En esta sección se desarrolla el modelo conceptual de la base de datos a trabaj
 El primer diagrama hace uso de la variante original numérica de Peter Chen, presentada por el mismo en su artículo "*The Entity–Relationship Model: Toward a Unified View of Data*" en 1976\.
 
 
-![][Numerico.png]
+![](Numerico.png)
 
 Este segundo diagrama hace uso de la variante simbólica de Chen:  
 
-![][Simbolico.png]
+![](Simbolico.png)
 
 Este último diagrama utiliza la variante híbrida de Chen, la cual hemos completado además con los atributos de cada entidad.  
 
-![][Completo.png]
+![](Completo.png)
 
 # MODELO RELACIONAL
 

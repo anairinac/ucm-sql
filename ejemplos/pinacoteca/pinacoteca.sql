@@ -38,7 +38,7 @@ CREATE TABLE mecenas (
     nombre VARCHAR(60), 
     pais VARCHAR(60), 
     fechaNacimiento DATE, 
-    fechaDefunción DATE
+    fechaDefuncion DATE
 );
 
 -- pintor
@@ -49,7 +49,7 @@ CREATE TABLE pintor (
     pais VARCHAR(60), 
     ciudad VARCHAR(60), 
     fechaNacimiento DATE, 
-    fechaDefunción DATE
+    fechaDefuncion DATE
 );
 
 -- cuadro

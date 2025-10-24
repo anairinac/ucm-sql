@@ -74,7 +74,8 @@ Con esta información, podemos finalizar el modelo relacional de nuestras tablas
 Adjunto a este documento se encuentra el archivo en formato SQL llamado **pinacoteca.sql** con el código resultante. También podemos encontrar su contenido en el [repositorio de GitHub](https://github.com/anairinac/ucm-sql/ejemplo/blob/main/ejemplos/pinacoteca/pinacoteca.sql) correspondiente, así como en la siguiente sección:
 
 ```sql
-\*--------------------------------------------------------------Proyecto:   Ejemplo Pinacoteca
+/*--------------------------------------------------------------
+Proyecto:   Ejemplo Pinacoteca
 Archivo:    ejemplos/pinacoteca.sql
 Autor:      Irina Calvo
 Fecha:      22-10-2025
@@ -82,11 +83,11 @@ DB:         MySQL Ver 9.4.0 for macos15 on arm64 (MySQL Community Server \- GPL)
 Curso:      Bases de Datos SQL
 Programa:   Master Big Data, Data Science, AI
 Universidad Complutense
-\--------------------------------------------------------------\*/
-\-- create database
+--------------------------------------------------------------*/
+-- create database
 DROP DATABASE IF EXISTS ejemplo\_pinacoteca; CREATE DATABASE ejemplo\_pinacoteca; USE ejemplo\_pinacoteca;
 
-\-- pinacoteca
+-- pinacoteca
 DROP TABLE IF EXISTS pinacoteca;
 CREATE TABLE pinacoteca (
     nombre VARCHAR(60) PRIMARY KEY, 
@@ -95,7 +96,7 @@ CREATE TABLE pinacoteca (
     superficie SMALLINT
 );
 
-\-- escuela
+-- escuela
 DROP TABLE IF EXISTS escuela;
 CREATE TABLE escuela ( 
     codigo SMALLINT PRIMARY KEY AUTO\_INCREMENT, 
@@ -104,7 +105,7 @@ CREATE TABLE escuela (
     fechaAparicion DATE
 );
 
-\-- mecenas
+-- mecenas
 DROP TABLE IF EXISTS mecenas;
 CREATE TABLE mecenas (
     codigo SMALLINT PRIMARY KEY AUTO\_INCREMENT, 
@@ -114,7 +115,7 @@ CREATE TABLE mecenas (
     fechaDefunción DATE
 );
 
-\-- pintor
+-- pintor
 DROP TABLE IF EXISTS pintor;
 CREATE TABLE pintor (
     codigo SMALLINT PRIMARY KEY AUTO\_INCREMENT,
@@ -125,7 +126,7 @@ CREATE TABLE pintor (
     fechaDefunción DATE
 );
 
-\-- cuadro
+-- cuadro
 DROP TABLE IF EXISTS cuadro;
 CREATE TABLE cuadro (
     codigo SMALLINT PRIMARY KEY AUTO\_INCREMENT, 
@@ -140,7 +141,7 @@ CREATE TABLE cuadro (
     FOREIGN KEY (codigoPintor) REFERENCES pintor(codigo) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-\-- protege\_a
+-- protege_a
 DROP TABLE IF EXISTS protege\_a;
 CREATE TABLE protege\_a (
     codigoMecenas SMALLINT,
@@ -150,7 +151,7 @@ CREATE TABLE protege\_a (
     FOREIGN KEY (codigoPintor) REFERENCES pintor(codigo) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-\-- pertenece\_a
+-- pertenece_a
 DROP TABLE IF EXISTS pertenece\_a;
 CREATE TABLE pertenece\_a (
     codigoPintor SMALLINT,
@@ -160,7 +161,7 @@ CREATE TABLE pertenece\_a (
     FOREIGN KEY (codigoEscuela) REFERENCES escuela(codigo) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-\-- es\_maestro
+-- es_maestro
 DROP TABLE IF EXISTS es\_maestro;
 CREATE TABLE es\_maestro (
     codigoMaestro SMALLINT,

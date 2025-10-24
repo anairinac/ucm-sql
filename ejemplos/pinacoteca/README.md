@@ -85,7 +85,9 @@ Programa:   Master Big Data, Data Science, AI
 Universidad Complutense
 --------------------------------------------------------------*/
 -- create database
-DROP DATABASE IF EXISTS ejemplo_pinacoteca; CREATE DATABASE ejemplo_pinacoteca; USE ejemplo_pinacoteca;
+DROP DATABASE IF EXISTS ejemplo_pinacoteca; 
+CREATE DATABASE ejemplo_pinacoteca; 
+USE ejemplo_pinacoteca;
 
 -- pinacoteca
 DROP TABLE IF EXISTS pinacoteca;
@@ -112,7 +114,7 @@ CREATE TABLE mecenas (
     nombre VARCHAR(60), 
     pais VARCHAR(60), 
     fechaNacimiento DATE, 
-    fechaDefunción DATE
+    fechaDefuncion DATE
 );
 
 -- pintor
@@ -123,7 +125,7 @@ CREATE TABLE pintor (
     pais VARCHAR(60), 
     ciudad VARCHAR(60), 
     fechaNacimiento DATE, 
-    fechaDefunción DATE
+    fechaDefuncion DATE
 );
 
 -- cuadro

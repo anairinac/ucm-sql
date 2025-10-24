@@ -57,11 +57,11 @@ mecenas ( codigo, nombre, pais, fechaNacimiento, fechaDefunción )
 
 escuela ( codigo, nombre, pais, fechaAparicion )
 
-**es\_maestro ( codigoMaestro, codigoDiscipulo )**
+**es_maestro ( codigoMaestro, codigoDiscipulo )**
 
-**protege\_a ( codigoMecenas, codigoPintor )**
+**protege_a ( codigoMecenas, codigoPintor )**
 
-**pertenece\_a ( codigoPintor, codigoEscuela )**
+**pertenece_a ( codigoPintor, codigoEscuela )**
 
 ## Modelado de tablas
 
@@ -85,7 +85,7 @@ Programa:   Master Big Data, Data Science, AI
 Universidad Complutense
 --------------------------------------------------------------*/
 -- create database
-DROP DATABASE IF EXISTS ejemplo\_pinacoteca; CREATE DATABASE ejemplo\_pinacoteca; USE ejemplo\_pinacoteca;
+DROP DATABASE IF EXISTS ejemplo_pinacoteca; CREATE DATABASE ejemplo_pinacoteca; USE ejemplo_pinacoteca;
 
 -- pinacoteca
 DROP TABLE IF EXISTS pinacoteca;
@@ -99,7 +99,7 @@ CREATE TABLE pinacoteca (
 -- escuela
 DROP TABLE IF EXISTS escuela;
 CREATE TABLE escuela ( 
-    codigo SMALLINT PRIMARY KEY AUTO\_INCREMENT, 
+    codigo SMALLINT PRIMARY KEY AUTO_INCREMENT, 
     nombre VARCHAR(60), 
     pais VARCHAR(60), 
     fechaAparicion DATE
@@ -108,7 +108,7 @@ CREATE TABLE escuela (
 -- mecenas
 DROP TABLE IF EXISTS mecenas;
 CREATE TABLE mecenas (
-    codigo SMALLINT PRIMARY KEY AUTO\_INCREMENT, 
+    codigo SMALLINT PRIMARY KEY AUTO_INCREMENT, 
     nombre VARCHAR(60), 
     pais VARCHAR(60), 
     fechaNacimiento DATE, 
@@ -118,7 +118,7 @@ CREATE TABLE mecenas (
 -- pintor
 DROP TABLE IF EXISTS pintor;
 CREATE TABLE pintor (
-    codigo SMALLINT PRIMARY KEY AUTO\_INCREMENT,
+    codigo SMALLINT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(60), 
     pais VARCHAR(60), 
     ciudad VARCHAR(60), 
@@ -129,7 +129,7 @@ CREATE TABLE pintor (
 -- cuadro
 DROP TABLE IF EXISTS cuadro;
 CREATE TABLE cuadro (
-    codigo SMALLINT PRIMARY KEY AUTO\_INCREMENT, 
+    codigo SMALLINT PRIMARY KEY AUTO_INCREMENT, 
     nombre VARCHAR(60), 
     ancho SMALLINT, 
     alto SMALLINT, 
@@ -142,8 +142,8 @@ CREATE TABLE cuadro (
 );
 
 -- protege_a
-DROP TABLE IF EXISTS protege\_a;
-CREATE TABLE protege\_a (
+DROP TABLE IF EXISTS protege_a;
+CREATE TABLE protege_a (
     codigoMecenas SMALLINT,
     codigoPintor SMALLINT,
     PRIMARY KEY (codigoMecenas, codigoPintor),
@@ -152,8 +152,8 @@ CREATE TABLE protege\_a (
 );
 
 -- pertenece_a
-DROP TABLE IF EXISTS pertenece\_a;
-CREATE TABLE pertenece\_a (
+DROP TABLE IF EXISTS pertenece_a;
+CREATE TABLE pertenece_a (
     codigoPintor SMALLINT,
     codigoEscuela SMALLINT,
     PRIMARY KEY (codigoPintor, codigoEscuela),
@@ -162,8 +162,8 @@ CREATE TABLE pertenece\_a (
 );
 
 -- es_maestro
-DROP TABLE IF EXISTS es\_maestro;
-CREATE TABLE es\_maestro (
+DROP TABLE IF EXISTS es_maestro;
+CREATE TABLE es_maestro (
     codigoMaestro SMALLINT,
     codigoDiscipulo SMALLINT,
     PRIMARY KEY (codigoMaestro, codigoDiscipulo),
